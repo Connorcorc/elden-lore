@@ -1,0 +1,12 @@
+.infoCard {
+  width: 30vw;
+  margin: 50px;
+  padding:15px;
+  border: 5px solid white;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

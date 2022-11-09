@@ -1,25 +1,35 @@
-import logo from './logo.svg';
+import React, { Component } from 'react'
+// import fetchCall from './src/api-calls.js'
+import LandingPage from '../LandingPage/LandingPage'
+import MainPage from '../MainPage/MainPage'
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  constructor() {
+    super()
+    this.state = {
+      eldenRingData: [],
+      random: {}
+    }
+  }
+
+componentDidMount = () => {
+  fetch(`https://eldenring.fanapis.com/api/creatures?limit=3`)
+    .then(response => response.json())
+    .then(data => this.setState({eldenRingData: data.data}))
+
 }
 
+
+// <MainPage eldenRingData={this.state.eldenRingData}/>
+  render() {
+    console.log(this.state)
+    return (
+      <main className="mainPage">
+      <MainPage eldenRingData={this.state.eldenRingData}/>
+
+      </main>
+    )
+  }
+}
 export default App;

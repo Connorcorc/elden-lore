@@ -1,0 +1,17 @@
+div {
+  color: gold;
+}
+
+.infoContainer {
+  border: 5px solid white;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
+.audio {
+  display: flex;
+  flex-direction: column;
+  height: 3vw;
+  background-color: black;
+}

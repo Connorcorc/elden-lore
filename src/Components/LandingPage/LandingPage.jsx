@@ -10,10 +10,14 @@ const playAudio = () => {
 
 const LandingPage = ({getData}) => {
   return (
-    <Link to="/main" className='mainContainer'>
-    <img className='logoImage' src={logo} / >
-    <button className='exploreButton' onClick={playAudio}>Explore Lore</button>
-    </Link>
+    <div className='mainContainer'>
+      <div>
+        <img className='logoImage' src={logo} / >
+      </div>
+      <Link to="/main">
+        <button className='exploreButton' onClick={playAudio}>Explore Lore</button>
+      </Link>
+    </div>
 
   )
 }

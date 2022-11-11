@@ -1,4 +1,10 @@
-body {
+/* @import {
+  font-family: 'MedievalSharp', cursive;
+} */
+
+* {
+  cursor: url('../../Assets/cursor2.png'), auto;
+  font-family: 'MedievalSharp';
   background-color: black;
 }
 

@@ -6,7 +6,9 @@ div {
   border: 5px solid white;
   box-sizing: border-box;
   display: flex;
+  align-items: center;
   justify-content: center;
+  width: 100vw
 }
 
 .audio {
@@ -14,4 +16,28 @@ div {
   flex-direction: column;
   height: 3vw;
   background-color: black;
+}
+
+.header {
+  display: flex;
+
+}
+
+.logo {
+  margin-left: 15px;
+  height: 7vh;
+  width: 5vw;
+}
+
+.headerText {
+  margin-left: 30px;
+}
+
+.sidebar {
+  text-align: center;
+  width: 10vw;
+}
+
+.mainBox {
+  display: flex;
 }

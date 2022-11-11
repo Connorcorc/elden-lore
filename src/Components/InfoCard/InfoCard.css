@@ -10,3 +10,8 @@
   align-items: center;
   justify-content: center;
 }
+
+.image = {
+  max-height: 300px;
+  max-width: 400px;
+}

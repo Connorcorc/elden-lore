@@ -9,17 +9,17 @@ import './App.css';
 const App = () => {
 const [eldenRingData, setEldenRingData] = useState([])
 
-const getData = () => {
-  fetch(`https://eldenring.fanapis.com/api/creatures?limit=100`)
-    .then(response => response.json())
-    .then(data => setEldenRingData(data.data))
-
-}
-// getData()
-
-useEffect(() => {
-  getData()
-}, [])
+// const getData = () => {
+//   fetch(`https://eldenring.fanapis.com/api/creatures?limit=100`)
+//     .then(response => response.json())
+//     .then(data => setEldenRingData(data.data))
+//
+// }
+// // getData()
+//
+// useEffect(() => {
+//   getData()
+// }, [])
 
 
     return (
